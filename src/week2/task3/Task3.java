@@ -9,12 +9,14 @@ class Gamer {
     String Ingame;  //tên người chơi
     int Level;      //cấp độ
     int Rank;       //bậc xếp hạng
-    public gamer(String Ingame, int Level, int Rank){
-        this.Ingame = Ingame;
-        this.Level = Level;
-        this.Rank = Rank;
+
+    public Gamer(String ingame, int level, int rank) {
+        Ingame = ingame;
+        Level = level;
+        Rank = rank;
     }
-// các phương thức getter, setter
+
+    // các phương thức getter, setter
     public void setIngame(String ingame) {
         Ingame = ingame;
     }
