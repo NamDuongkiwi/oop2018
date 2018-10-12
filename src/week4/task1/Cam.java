@@ -1,6 +1,7 @@
 package week4.task1;
 
 class Cam extends HoaQua {
+    //thêm thuộc tính cân nặng
     int cannang;
 
     public Cam(String mausac, String xuatxu, int giatien, int cannang) {
