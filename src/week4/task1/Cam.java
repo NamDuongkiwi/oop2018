@@ -16,6 +16,8 @@ class Cam extends HoaQua {
     public int getCannang() {
         return cannang;
     }
+    //thêm phương thúc in ra đơn hàng khi mua cam
+    
     public void indonhang(){
         System.out.println("Nguồn Gốc: ");
         System.out.println("Đơn Giá: "+ giatien + "/kg");
