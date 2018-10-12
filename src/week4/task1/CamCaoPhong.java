@@ -10,7 +10,7 @@ class CamCaoPhong extends Cam {
     public String getday(){
         return this.day;
     }
-    public voi setday(String day){
+    public void setday(String day){
         this.day = day;
     }
     //thêm phương thức check chất lượng cam
