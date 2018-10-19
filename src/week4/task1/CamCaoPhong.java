@@ -15,7 +15,7 @@ class CamCaoPhong extends Cam {
     }
     //thêm phương thức check chất lượng cam
     public void check(){
-        if(this.day == "dày");
+        if(this.day == "dày")
             System.out.println("cam đểu");
         else if(this.day == "mỏng")
             System.out.println("cam hịn");
