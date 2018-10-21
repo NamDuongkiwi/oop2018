@@ -39,4 +39,9 @@ public class Rectangle extends Shape{
     public double getArea() {
         return this.wight*this.height;
     }
+
+    @Override
+    public Point move(Point x) {
+        return this.point = x;
+    }
 }

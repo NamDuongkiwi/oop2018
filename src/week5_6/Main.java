@@ -21,10 +21,11 @@ public class Main {
         list.add(Tri);
         list.add(Tri2);
 
+
         Layer layer = new Layer(list);
         ArrayList<Layer> dia = new ArrayList<>();
         Diagram diagram = new Diagram(dia);
-        layer.removeCircle();
+        layer.deleteCircle();
         layer.out();
 
 

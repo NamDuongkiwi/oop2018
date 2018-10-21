@@ -18,7 +18,7 @@ public class Layer {
             }
         }
     }
-    public  void removeCircle(){
+    public  void deleteCircle(){
         for(int i = 0; i < layer.size(); i++) {
             if(layer.get(i) instanceof Circle) {
                 layer.remove(layer.get(i));

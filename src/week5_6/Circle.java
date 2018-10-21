@@ -45,4 +45,9 @@ public class Circle extends Shape {
     public double getArea() {
         return this.radius*this.radius*3.14;
     }
+
+    @Override
+    public Point move(Point x) {
+        return this.point = x;
+    }
 }

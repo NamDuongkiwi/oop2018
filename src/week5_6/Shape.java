@@ -10,4 +10,5 @@ public abstract class Shape {
     protected Point point;
     abstract public double getArea();
     abstract public void draw(Stage primaryStage, Group root);
+    abstract public Point move(Point x);
 }

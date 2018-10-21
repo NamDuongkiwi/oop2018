@@ -46,4 +46,10 @@ public class Triangle extends Shape {
     public void draw(Stage primaryStage, Group root) {
 
     }
+
+    @Override
+    public Point move(Point x) {
+        this.point = x;
+        return this.point;
+    }
 }

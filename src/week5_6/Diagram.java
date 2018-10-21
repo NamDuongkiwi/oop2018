@@ -11,7 +11,7 @@ public class Diagram {
 
     void removeCircle(){
         for(Layer layer : diagram){
-            layer.removeCircle();
+            layer.deleteCircle();
         }
     }
 }
