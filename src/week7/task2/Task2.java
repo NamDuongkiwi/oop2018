@@ -19,6 +19,8 @@ public class Task2 {
     public static void Arithmetic() throws ArithmeticException{
         int a = 9;
         int b = 0;
+
+        if(b == 0)
         System.out.println(a/b);
     }
     public static void ClassCast() throws ClassCastException{
