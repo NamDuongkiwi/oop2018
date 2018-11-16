@@ -53,7 +53,7 @@ public class Task1 {
                         }
                         temp += s + "\n";
                     }
-                    result.add(temp);
+                    result.add(temp + "    }");
                 }
             }
             br.close();
@@ -71,15 +71,26 @@ public class Task1 {
         String result = null;
         for(int i=0; i<a.size();i++){
             String b = a.get(i);
-            b.trim();
+            b = b.trim();
             b = b.substring(14, b.length());
             int index = b.indexOf(" ");
             b = b.substring(index, b.length());
-            b = b.replaceAll("\\s+", "");
-            b = b.replaceAll("path","");
-            b = b.replaceAll("folderPath", "");
-            b = b.replaceAll("fileName","");
-            if(b.equals(Name)) result = b;
+            int n = b.indexOf("(");
+            String head = b.substring(0,n);
+            String tail = b.substring(n,b.length());
+
+            String tail2 = new String();
+            String item[] = tail.split(", ");
+            for(int j = 0; j < item.length; j ++){
+                String first[] = item[j].split(" ");
+                tail2+=first[0]+",";
+            }
+            tail2=tail2.substring(0,tail2.length()-1);
+            tail2 += ")";
+            String h = head + tail2;
+            h = h.trim();
+            if(h.equals(Name)) result = h;
+
         }
 
         if(result != null){
